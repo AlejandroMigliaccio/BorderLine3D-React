@@ -1,0 +1,42 @@
+@import "../../../public/style.scss";
+
+/*Moblie*/
+
+.navBar {
+
+    background-color: #FBF8F1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+    a{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 500ms;
+        &:hover{
+            background-color: $color-1;
+            border-radius: 16px;
+            border-color: $color-3;
+        }
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+    .navBar {
+        font-size: x-large;
+    }
+    
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+    .navBar {
+        height: 40px;
+        font-weight: 700;
+        font-size: x-large;
+    }
+}

@@ -3,40 +3,45 @@
 /*Moblie*/
 
 .navBar {
-
-    background-color: #FBF8F1;
+    background-color: #fbf8f1;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: large;
-    font-weight: 600;
-    a{
-        width: 10%;
+    justify-content: space-around;
+    &__sections {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 500ms;
-        &:hover{
-            background-color: $color-1;
-            border-radius: 16px;
-            border-color: $color-3;
+        justify-content: space-around;
+        width: 70%;
+        font-size: large;
+        font-weight: 600;
+        a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 500ms;
+            &:hover {
+                background-color: $color-1;
+                border-radius: 16px;
+                border-color: $color-3;
+            }
         }
     }
 }
 
 /*Tablet*/
 @media only screen and (min-width: 768px) {
-    .navBar {
+    .navBar__sections {
         font-size: x-large;
     }
-    
 }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
-    .navBar {
+    .navBar__sections {
         height: 40px;
         font-weight: 700;
         font-size: x-large;
+        a{
+           width: 10%; 
+        }
     }
 }

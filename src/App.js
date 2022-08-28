@@ -7,6 +7,9 @@ function App() {
       <Header></Header>
       <NavBar></NavBar>
       <ItemListContainer></ItemListContainer>
+      <div>
+        aksdlasmda
+      </div>
     </div>
   );
 }

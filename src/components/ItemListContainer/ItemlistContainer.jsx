@@ -1,8 +1,15 @@
-const ItemListContainer = ()=>{
-    return(
-        <div className="list-container">
-            My Products list
-        </div>
+import ItemCard from "../ItemCard/ItemCard";
+
+const ItemListContainer = ({ productos }) => {
+
+    return (
+        <>
+            {
+                productos.map((producto) => (
+                    <ItemCard data={producto}  ></ItemCard>
+                ))
+            }
+        </>
     )
 }
 

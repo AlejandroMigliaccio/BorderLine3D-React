@@ -1,0 +1,25 @@
+@import "/public/style.scss";
+
+/*Moblie*/
+
+.card {
+    border: 2px solid magenta;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        text-align: center;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+
+}

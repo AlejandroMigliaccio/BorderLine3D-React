@@ -1,31 +1,41 @@
 import ItemCard from "../ItemCard/ItemCard";
+import { useEffect, useState } from "react";
+import "./style/style.scss";
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
-    const URL2="../../server/db/products"
-    const URL = "https://rickandmortyapi.com/api/character/?status=alive";
-  
+    const URL2 = "/server/db.json";
+
     const getdata = () => {
-        fetch(URL)
-            .then((res) =>{
+        fetch(URL2)
+            .then((res) => {
                 return res.json()
             })
-            .then(data=> setProductos(data))
-            .catch(error=>console.error(error))
+            .then(data => setProductos(data.products))
+            .catch(error => console.error(error))
     }
-  
+
     useEffect(() => {
-        getdata();
+        setTimeout(()=>{
+            getdata();
+
+        },2000)
     }, [])
 
     return (
-        <>
+        <div className="list">
             {
                 productos.map((producto) => (
-                    <ItemCard data={producto} key={producto.id} ></ItemCard>
+                    <ItemCard
+                        key={producto.id}
+                        title={producto.title}
+                        price={producto.price}
+                        image={producto.image}
+                        description={producto.description}
+                    />
                 ))
             }
-        </>
+        </div>
     )
 }
 

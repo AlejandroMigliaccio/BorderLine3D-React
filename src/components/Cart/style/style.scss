@@ -1,4 +1,4 @@
-@import "../../../public/style.scss";
+@import "/public/style.scss";
 
 /*Mobile*/
 .cart{
@@ -7,12 +7,16 @@
     align-items: center;
     justify-content: center;
     border-left: 1px solid $color-6;
+    width: 100%;
     img{
-        width: 13%;
+        width: 25%;
         
     }
     &__count{
-       margin-left: 5px;
+        width: 20%;
+        text-align: center;
+        font-size: x-large;
+        font-weight: 600;
     }
     &:hover{
         border-radius: 8px;

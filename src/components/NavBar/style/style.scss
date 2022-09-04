@@ -1,4 +1,4 @@
-@import "../../../public/style.scss";
+@import "/public/style.scss";
 
 /*Moblie*/
 
@@ -6,6 +6,7 @@
     background-color: #fbf8f1;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     &__sections {
         display: flex;
         justify-content: space-around;

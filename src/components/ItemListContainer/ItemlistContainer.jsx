@@ -4,10 +4,10 @@ import "./style/style.scss";
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
-    const URL2 = "/server/db.json";
+    const URL = "/server/db.json";
 
     const getdata = () => {
-        fetch(URL2)
+        fetch(URL)
             .then((res) => {
                 return res.json()
             })
@@ -21,7 +21,7 @@ const ItemListContainer = () => {
 
         },2000)
     }, [])
-
+   
     return (
         <div className="list">
             {

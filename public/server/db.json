@@ -1,0 +1,40 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title":"SG",
+            "description":"La Gibson SG es un modelo de guitarra eléctrica sacada al mercado en 1961 (como la Gibson Les Paul SG) por Gibson, y que sigue en producción desde entonces junto a sus muchas variaciones. La SG Standard es el modelo de guitarra más vendido de Gibson.",
+            "price": 120000,
+            "stock":5,
+            "image":"/guitars/sg/sg1.png",
+            "color":"red"
+        },
+        {
+            "id":2,
+            "title":"Flying V",
+            "description":"Los primeros prototipos se fabricaron en 1957. Estas Flying V, junto con las Explorer -inicialmente la Moderne-, formaban una línea modernista diseñada por el entonces presidente Ted McCarty, que buscaban darle un aspecto más futurista a la imagen de Gibson. Sin embargo, la línea inicial lanzada en 1958 se dejó de fabricar en 1959 a causa de las pocas unidades vendidas.",
+            "price":140000,
+            "stock":1,
+            "image":"/guitars/fly/v1.png",
+            "color":"B&W"
+        },
+        {
+            "id":3,
+            "title":"BC Rick",
+            "description":"B.C. Rich es una marca americana de guitarras y de bajos fundada en 1969 en Los Ángeles. La compañía se ha hecho famosa por sus diseños originales. Desde los años 2000 la marca B.C. Rich forma parte de Hanser Music Group, una empresa de distribución situada en Hebron, Kentucky. Los instrumentos se producen en los Estados Unidos y en Asia.",
+            "price":200000,
+            "stock":2,
+            "image":"/guitars/bc/bc1.png",
+            "color":"B&W"
+        },
+        {
+            "id":4,
+            "title":"Les Paul",
+            "description":"La Gibson Les Paul es un modelo de guitarra eléctrica y bajo de la marca Gibson Guitar Corporation. Fabricada desde 1952, la Gibson Les Paul es extensamente considerada, junto con la Fender Stratocaster, la guitarra eléctrica de cuerpo macizo más popular del mundo.",
+            "price":202000,
+            "stock":6,
+            "image":"/guitars/les/les1.png",
+            "color":"B&Gold"
+        }
+    ]
+}

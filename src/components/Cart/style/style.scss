@@ -1,0 +1,39 @@
+@import "/public/style.scss";
+
+/*Mobile*/
+.cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid $color-6;
+    width: 100%;
+    img{
+        width: 25%;
+        
+    }
+    &__count{
+        width: 20%;
+        text-align: center;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    &:hover{
+        border-radius: 8px;
+        background-color: gray;
+        border: 2px solid $color-7;
+        &__count{
+            color: antiquewhite;
+        }
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+
+}

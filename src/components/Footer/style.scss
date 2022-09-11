@@ -1,0 +1,57 @@
+@import "/public/styles/style.scss";
+
+//Mobile
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $color-2;
+        border-top: 2px solid $color-5;
+        &__list {
+            list-style: none;
+            padding: 0;
+        }
+        &__media {
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    &__legal {
+        background-color: $color-3;
+        border-top: 2px solid $color-4;
+        font-size: small;
+        text-align: center;
+    }
+}
+
+//Tablet
+@media only screen and (min-width: 768px) {
+    .map {
+        margin: 2rem auto;
+    }
+}
+
+//Desktop
+@media only screen and (min-width: 1024px) {
+    .map {
+        width: 98%;
+        &__title {
+            font-size: large;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+        &__location {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}

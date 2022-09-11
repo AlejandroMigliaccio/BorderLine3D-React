@@ -1,12 +1,17 @@
-import './style/style.scss';
-
+import './style.scss';
+import Navbar from '../Navbar/Navbar';
+import {Link} from "react-router-dom";
 const Header = () => {
     return (
-        <header className="header">
-            <img src="/logo.png" alt='title' className='header__logo' />
-            <img src="title.png" alt='title' className='header__title'/>
-        </header>
-    )
+        <div>
+            <header className="header">
+                <Link to="/" className="header__anc">
+                    <img src="/images/borderlogo.png" alt="logo" className="header__logo" />
+                </Link>
+                <Navbar></Navbar>
+            </header>
+        </div >
+    );
 }
 
 export default Header;

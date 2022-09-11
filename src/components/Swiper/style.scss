@@ -1,0 +1,24 @@
+@import "/public/styles/style.scss";
+
+//Mobile
+
+.swiper {
+    margin: 2rem;
+    max-height: fit-content;
+    img {
+        height: 200px;
+        border-radius: 16px;
+    }
+}
+//Tablet
+@media only screen and (min-width: 768px) {
+}
+
+//Desktop
+@media only screen and (min-width: 1024px) {
+    .swiper {
+        img {
+            height: 550px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "/public/styles/style.scss";
+
+//Mobile
+
+.item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    border: 1px solid #576f72;
+    margin-bottom: 1rem;
+    &__title {
+        margin: auto 1rem;
+        text-align: center;
+    }
+    &__price {
+        margin: auto 0;
+    }
+    img {
+        margin-right: 0.5rem;
+    }
+}
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+

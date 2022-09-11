@@ -1,0 +1,54 @@
+@import "/public/styles/style.scss";
+
+//Mobile
+.button__cart {
+    width: 10%;
+    font-weight: 600;
+    font-size: small;
+    color: $color-7;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid $color-6;
+    background-color: $color-5;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    img{
+        width: 30%;
+    }
+}
+.button {
+    width: auto;
+    font-weight: 600;
+    font-size: small;
+    color: $color-7;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid $color-6;
+    background-color: $color-5;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+    .button {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .button {
+        font-size: medium;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #6d8b78;
+        color: #feffe4;
+    }
+}
+

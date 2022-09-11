@@ -1,0 +1,39 @@
+@import "/public/styles/style.scss";
+
+@import "/public/styles/style.scss";
+
+//Mobile
+.link {
+    text-decoration: none;
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-size: large;
+    color: $color-7;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid $color-1;
+    background-color: $color-2;
+    margin: 2rem;
+    text-decoration: none;
+    &:hover {
+        background-color: $color-5;
+        color: #979b35;
+    }
+}
+
+.catNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}

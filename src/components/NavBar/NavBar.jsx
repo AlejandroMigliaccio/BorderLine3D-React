@@ -1,24 +1,16 @@
-import './style/style.scss';
-import Cart from '../Cart/Cart';
-const NavBar = () => {
+import './style.scss';
+import {Link} from 'react-router-dom';
+const Navbar = () => {
     return (
-        <div className="navBar">
-        <div className='navBar__sections'>
-            <a>
-                Home
-            </a>
-            <a>
-                Products
-            </a>
-            <a>
-                Contact
-            </a>
-        </div>
-        <div className='navBar__cart'>
-            <Cart></Cart>
-        </div>
-        </div>
+        <>
+            <Link to="/" className='button'>Inicio</Link>
+            <Link to="/productos" className='button'>Productos</Link>
+            <Link to="/cart" className='button__cart'>
+                <img src='/images/cart.svg'></img>
+                <div className='count'>2</div>
+            </Link>
+        </>
     )
 }
 
-export default NavBar;
+export default Navbar;

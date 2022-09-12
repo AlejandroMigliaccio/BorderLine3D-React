@@ -36,7 +36,7 @@ const ItemCardContainer = () => {
             filterCat(productos);
         }, )
     }, [categoryId,productos])
-    console.log(productos)
+
     return (
 
         <div className="product-list">

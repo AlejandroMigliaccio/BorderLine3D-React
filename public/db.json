@@ -6,7 +6,8 @@
             "price":780,
             "description":"Adorno que representa la union entre padre/madre e hijo/a",
             "url":"/images/Productos/fami.png",
-            "categoria":"decoracion"
+            "categoria":"decoracion",
+            "stock":"10"
         },
         {
             "id":"2",
@@ -14,7 +15,9 @@
             "price":595,
             "description":"Snitch de la saga Harry Potter escala 1:1",
             "url":"/images/Productos/harry.png",
-            "categoria":"juguete"
+            "categoria":"juguete",
+            "stock":"10"
+            
         },
         {
             "id":"3",
@@ -22,7 +25,8 @@
             "price":1100,
             "description":"Llaveros personalizados para las llaves de tu casa o el auto",
             "url":"/images/Productos/lavve.png",
-            "categoria":"oficina"
+            "categoria":"oficina",
+            "stock":"10"
         },
         {
             "id":"4",
@@ -30,7 +34,8 @@
             "price":1500,
             "description":"Remplazo para palancas de cambio de cuatriciclos",
             "url":"/images/Productos/manija.png",
-            "categoria":"repuesto"
+            "categoria":"repuesto",
+            "stock":"10"
         },
         {
             "id":"5",
@@ -38,7 +43,8 @@
             "price":2000,
             "description":"Adorno del iconico logo del juego Mortal Kombat",
             "url":"/images/Productos/km1.png",
-            "categoria":"decoracion"
+            "categoria":"decoracion",
+            "stock":"10"
         },
         {
             "id":"6",
@@ -46,7 +52,8 @@
             "price":2950,
             "description":"Soporte regulable para notebooks con antideslizante",
             "url":"/images/Productos/notebook.png",
-            "categoria":"oficina"
+            "categoria":"oficina",
+            "stock":"10"
         },
         {
             "id":"7",
@@ -54,7 +61,8 @@
             "price":1250,
             "description":"Adorno de Picachu dorado, hermoso detalle en la impresion",
             "url":"/images/Productos/pika.png",
-            "categoria":"juguete"
+            "categoria":"juguete",
+            "stock":"10"
         },
         {
             "id":"8",
@@ -62,7 +70,8 @@
             "price":1200,
             "description":"Maceta con forma de pokemon tipo planta",
             "url":"/images/Productos/pokeplant.png",
-            "categoria":"oficina"
+            "categoria":"oficina",
+            "stock":"10"
         },
         {
             "id":"9",
@@ -70,7 +79,8 @@
             "price":3000,
             "description":"Estatua de mmmmmmm... gloriosa Venus de jalea, 25 cm de alto",
             "url":"/images/Productos/venus.png",
-            "categoria":"decoracion"
+            "categoria":"decoracion",
+            "stock":"10"
         }        
     ]
 }

@@ -3,45 +3,35 @@ import "./style.scss";
 import { useEffect, useState } from "react";
 import ItemCard from "./ItemCard/ItemCard";
 import { useParams } from 'react-router-dom';
-
+import { db } from "../../../../utils/firebase";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemCardContainer = () => {
     const { categoryId } = useParams();
     const [productos, setProductos] = useState([]);
-    const [categoria, setCategory] = useState([]);
-    const URL2 = "/db.json";
 
-    const getdata = () => {
-        fetch(URL2)
-            .then((res) => {
-                return res.json()
-            })
-            .then(data => setProductos(data.products))
-            .catch(error => console.error(error))
-    }
-    
-    const filterCat = (a) => {
-        if(categoryId){
-            const p = a.filter(prod => prod.categoria === categoryId);
-            setCategory(p);
-        }else{
-            setCategory(a);
-        }
-
+    const getData = async () => {
+        const queryRef = !categoryId ? collection(db, "products") : query(collection(db, "products"), where("categoria", "==", categoryId));
+        const response = await getDocs(queryRef);
+        const productos = response.docs.map(doc => {
+            const products = {
+                ...doc.data(),
+                id: doc.id
+            }
+            return products
+        });
+        setProductos(productos);
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            getdata();
-            filterCat(productos);
-        }, )
-    }, [categoryId,productos])
+        getData();
+    }, [categoryId])
 
     return (
 
         <div className="product-list">
             {
-                categoria.map((producto) => (
+                productos.map((producto) => (
 
                     <ItemCard
                         key={producto.id}

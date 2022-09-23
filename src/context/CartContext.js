@@ -8,7 +8,6 @@ export const CartProvider = ({ children }) => {
     const [prodctCartList, setProductCartList] = useState([]);
 
     const addItem = (item, image, price, quantity) => {
-
         const newProd = {
             title: item,
             price: price,
@@ -30,7 +29,6 @@ export const CartProvider = ({ children }) => {
             setProductCartList(newList);
             confirmado();
         }
-
     }
 
     const removeItem = (itemId) => {
@@ -41,7 +39,8 @@ export const CartProvider = ({ children }) => {
     }
 
     const clear = () => {
-        if (prodctCartList < 0) {
+        debugger
+        if (prodctCartList.length > 0) {
             setProductCartList([]);
             alertaListClear();
         } else {

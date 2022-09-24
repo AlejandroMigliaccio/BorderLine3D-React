@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const CatNav = () => {
     return (
         <div className="catNav">
-            <NavLink to="/productos" className={({ isActive }) => isActive ? "link" : "link"}>
+            <NavLink to="/productos/" className={({ isActive }) => isActive ? "link" : "link"}>
                 Todo
             </NavLink>
             <NavLink to="/productos/oficina" className={({ isActive }) => isActive ? "link" : "link"}>

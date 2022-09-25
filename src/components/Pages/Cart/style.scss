@@ -10,6 +10,7 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         &__title {
             text-align: center;
         }
@@ -34,6 +35,15 @@
         }
     }
 }
+
+.form{
+    &__frame{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}
 /*Tablet*/
 @media only screen and (min-width: 768px) {
 }
@@ -56,6 +66,11 @@
                     background-color: $color-4;
                 }
             }
+        }
+    }
+    .form{
+        &__frame{
+            
         }
     }
 }

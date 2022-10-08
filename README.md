@@ -1,3 +1,15 @@
+# Border Line 3D
+
+This a eCommerce type page, a final work for coderHouse course where the main subject is a personal
+entrepreneurship of 3D printing
+
+## How to
+
+is a single eCommerce page where you can select a item an see all details of a it, add it to a cart and
+finaly simulate a purchase
+
+### Here is an example
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +80,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

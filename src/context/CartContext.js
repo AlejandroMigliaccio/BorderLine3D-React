@@ -39,7 +39,6 @@ export const CartProvider = ({ children }) => {
     }
 
     const clear = () => {
-        debugger
         if (prodctCartList.length > 0) {
             setProductCartList([]);
             alertaListClear();

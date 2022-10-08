@@ -6,9 +6,15 @@ import { useParams } from 'react-router-dom';
 import { db } from "../../../../utils/firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 
+
 const ItemCardContainer = () => {
     const { categoryId } = useParams();
     const [productos, setProductos] = useState([]);
+
+
+    const cambiarEstado = () => {
+    
+    }
 
     const getData = async () => {
         const queryRef = !categoryId ? collection(db, "products") : query(collection(db, "products"), where("categoria", "==", categoryId));
@@ -24,6 +30,7 @@ const ItemCardContainer = () => {
     }
 
     useEffect(() => {
+        cambiarEstado();
         getData();
     }, [categoryId])
 
@@ -31,6 +38,7 @@ const ItemCardContainer = () => {
 
         <div className="product-list">
             {
+
                 productos.map((producto) => (
 
                     <ItemCard
@@ -41,6 +49,7 @@ const ItemCardContainer = () => {
                         image={producto.url}
                         description={producto.description}
                     />
+
                 ))
             }
         </div>

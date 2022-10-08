@@ -13,12 +13,13 @@
         justify-content: center;
         align-items: center;
         align-content: center;
+        min-height: 550px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .DetailContainer{
         width: 90%;
-        
+        min-height: 680px;
     }
 }

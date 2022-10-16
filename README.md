@@ -5,7 +5,7 @@ entrepreneurship of 3D printing
 
 ## How to
 
-is a single eCommerce page where you can select a item an see all details of a it, add it to a cart and
+is a single eCommerce page where you can select a item an see all details of it, add it to a cart and
 finaly simulate a purchase
 
 ### Here is an example
